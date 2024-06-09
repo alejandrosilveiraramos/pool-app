@@ -1,38 +1,34 @@
 name: pool_app
-description: "A new Flutter project."
+description: "Pool is a Flutter app for the Brazilian game 'Bolão' (Sweepstake). It allows users to join and manage sweepstakes with friends."
 
-publish_to: 'none' 
-
+publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
   sdk: '>=3.3.3 <4.0.0'
 
-
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.18.1
   flutter_native_splash: ^2.4.0
-
-  
-  
   cupertino_icons: ^1.0.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  
-  
-  
-  
-  
   flutter_lints: ^3.0.0
+  intl_utils: ^2.5.0
+  build_runner: ^2.2.0
 
-
-
-
+flutter_intl:
+  enabled: true
+  main_locale: en
+  arb_dir: lib/l10n
+  output_dir: lib/generated
 
 flutter:
   uses-material-design: true
@@ -53,7 +49,6 @@ flutter:
         - asset: assets/fonts/Prompt-Regular.ttf
         - asset: assets/fonts/Prompt-SemiBold.ttf
 
-
 flutter_native_splash:
   color: "#FFFFFF"
   image: assets/images/splash.png
@@ -62,4 +57,3 @@ flutter_native_splash:
   android_12:
     color: "#FFFFFF"
     image: assets/images/splash.png
-
